@@ -1,0 +1,19 @@
+{
+  "name": "olivine-components-react",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "Ruben Costa <costamartinezruben@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo precommit goes here"
+    }
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
