@@ -8,14 +8,26 @@
   "workspaces": [
     "packages/*"
   ],
-  "scripts": {},
-  "husky": {
-    "hooks": {
-      "pre-commit": "echo precommit goes here"
-    }
+  "scripts": {
+    "start": "lerna run start --parallel"
   },
   "devDependencies": {
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "husky": ">=1",
+    "lint-staged": ">=8",
+    "prettier": "^1.18.2",
     "lerna": "^3.20.2",
     "microbundle": "^0.11.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
