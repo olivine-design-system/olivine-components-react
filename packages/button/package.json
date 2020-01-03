@@ -1,6 +1,11 @@
 {
   "name": "button",
   "version": "0.0.0",
-  "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "peerDependencies": {
+    "react": ">=16.8",
+    "react-dom": ">=16.8"
+  }
 }
