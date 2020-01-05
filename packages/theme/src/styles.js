@@ -63,7 +63,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   img {
-    width: 100%;
+    width: 99%;
     height: auto;
     border: 0;
   }

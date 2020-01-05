@@ -27,7 +27,7 @@
     "test": "jest"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/olivine-design-system"
   },
   "author": "Ruben Costa",
   "license": "MIT",
@@ -36,5 +36,5 @@
     "react": "^16.8.1",
     "styled-components": "^4.1.3"
   },
-  "gitHead": "d21ac8ac87a34b098fa3c1b7f617cfe230169089"
+  "gitHead": "01f7140f74458801155f6b21d8b637e94f011d73"
 }
