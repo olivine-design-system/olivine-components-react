@@ -1,11 +1,18 @@
 {
-  "packages": ["packages/*"],
-  "version": "independent",
   "npmClient": "yarn",
-  "useWorkspaces": true,
+  "packages": ["packages/*"],
   "command": {
     "publish": {
-      "message": "chore(publish): 🤖update packages"
+      "ignoreChanges": [
+        ".babelrc",
+        ".eslintrc.js",
+        "babel.config.js",
+        "*.stories.js",
+        "*.test.js",
+        "*.md"
+      ]
     }
-  }
+  },
+  "useWorkspaces": true,
+  "version": "independent"
 }
