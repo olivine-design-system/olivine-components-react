@@ -1,5 +1,5 @@
 {
-  "name": "@olivine-design-system/ns-card-js",
+  "name": "@olivine-components-react/ns-card-js",
   "version": "0.1.0",
   "description": "Example card component",
   "main": "lib/index.js",
@@ -13,7 +13,6 @@
   "directories": {
     "lib": "src"
   },
-  "private": true,
   "scripts": {
     "prebuild": "rimraf dist && rimraf es && rimraf esm && rimraf lib",
     "build": "yarn build-csj && yarn build-es && yarn build-esm && yarn build-umd",
@@ -31,10 +30,10 @@
     "access": "public",
     "registry": "http://localhost:4873/"
   },
-  "author": "Stefan Natter",
+  "author": "Ruben Costa",
   "license": "MIT",
   "dependencies": {
-    "@olivine-design-system/ns-base-js": "^0.1.0",
+    "@olivine-components-react/ns-base-js": "^0.1.0",
     "lodash": "^4.17.11",
     "react": "^16.8.1",
     "styled-components": "^4.1.3"

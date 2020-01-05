@@ -39,7 +39,7 @@ module.exports = [
     type: 'input',
     name: 'author',
     message: "Who's the author of the package",
-    default: 'Stefan Natter',
+    default: 'Ruben Costa',
   },
   {
     type: 'input',

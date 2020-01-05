@@ -1,7 +1,7 @@
 import React from 'react'
 import { get } from 'lodash'
 import styled from 'styled-components'
-import { Button } from '@olivine-design-system/ns-base-js'
+import { Button } from '@olivine-components-react/ns-base-js'
 
 export const StyledCard = styled.div`
   border: 5px solid ${props => get(props, 'theme.Card.borderColor') || '#000'};

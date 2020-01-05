@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount, shallow } from 'enzyme'
-import { Button } from '@olivine-design-system/ns-base-js'
+import { Button } from '@olivine-components-react/ns-base-js'
 
 import Card from '.'
 
