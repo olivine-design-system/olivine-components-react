@@ -35,5 +35,6 @@
     "lodash": "^4.17.11",
     "react": "^16.8.1",
     "styled-components": "^4.1.3"
-  }
+  },
+  "gitHead": "d21ac8ac87a34b098fa3c1b7f617cfe230169089"
 }

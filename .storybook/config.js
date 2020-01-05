@@ -17,8 +17,8 @@ function loadStories() {
 
 addParameters({
   options: {
-    brandTitle: '@olivine-design-system',
-    brandUrl: 'https://twitter.com/olivine-design-system',
+    brandTitle: '@olivine-components-react',
+    brandUrl: 'https://twitter.com/olivine-components-react',
     isFullscreen: false,
     panelPosition: 'right',
     showNav: true,

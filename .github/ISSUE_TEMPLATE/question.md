@@ -6,9 +6,9 @@ about: Usage question or discussion.
 <!--
   To make it easier for us to help you — please follow the suggested format below.
 
-  Before opening a new issue, please search existing issues: https://github.com/olivine-design-system/olivine-components-react
+  Before opening a new issue, please search existing issues: https://github.com/olivine-components-react/olivine-components-react
 
-  For general technical questions, contact me on [Twitter](http://twitter.com/olivine-design-system).
+  For general technical questions, contact me on [Twitter](http://twitter.com/olivine-components-react).
 -->
 
 # Question

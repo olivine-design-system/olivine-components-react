@@ -29,7 +29,7 @@ uplinks:
     cache: false
 
 packages:
-  '@olivine-design-system/*':
+  '@olivine-components-react/*':
     access: $all
     publish: $authenticated
     proxy: npmjs
@@ -57,4 +57,4 @@ packages:
 
 # log settings
 logs:
-  - {type: stdout, format: pretty, level: trace}
+  - { type: stdout, format: pretty, level: trace }

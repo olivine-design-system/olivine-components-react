@@ -47,7 +47,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/olivine-design-system/olivine-components-react.git"
+    "url": "git+https://github.com/olivine-components-react/olivine-components-react.git"
   },
   "workspaces": {
     "packages": ["packages/*"]
@@ -60,9 +60,9 @@
     "styled-components"
   ],
   "bugs": {
-    "url": "https://github.com/olivine-design-system/olivine-components-react/issues"
+    "url": "https://github.com/olivine-components-react/olivine-components-react/issues"
   },
-  "homepage": "https://github.com/olivine-design-system/olivine-components-react#readme",
+  "homepage": "https://github.com/olivine-components-react/olivine-components-react#readme",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
