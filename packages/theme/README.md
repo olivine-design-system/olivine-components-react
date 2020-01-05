@@ -5,7 +5,7 @@
 ```js
 import React from 'react';
 import { ThemeProvider } from 'styled-components
-import { GlobalStyles } from '@natterstefan/ns-theme-js'
+import { GlobalStyles } from '@olivine-design-system/ns-theme-js'
 
 import { theme } from './theme'
 

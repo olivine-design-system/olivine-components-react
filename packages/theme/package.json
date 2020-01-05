@@ -1,5 +1,5 @@
 {
-  "name": "@natterstefan/ns-theme-js",
+  "name": "@olivine-design-system/ns-theme-js",
   "version": "0.1.0",
   "description": "Example theme component",
   "main": "lib/index.js",

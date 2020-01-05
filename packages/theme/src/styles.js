@@ -4,14 +4,14 @@
  * - https://www.npmjs.com/package/styled-normalize
  *  - https://github.com/necolas/normalize.css
  */
-import { get } from "lodash";
-import { createGlobalStyle } from "styled-components";
+import { get } from 'lodash'
+import { createGlobalStyle } from 'styled-components'
 
-const defaultFonts = "Helvetica, Arial, sans-serif";
+const defaultFonts = 'Helvetica, Arial, sans-serif'
 
 export const GlobalStyle = createGlobalStyle`
   * {
-    font-family: ${props => get(props, "theme.fonts.primary") || defaultFonts};
+    font-family: ${props => get(props, 'theme.fonts.primary') || defaultFonts};
     box-sizing: border-box;
   }
 
@@ -19,19 +19,19 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    background: ${props => get(props, "theme.body.background") || "#fff"};
+    background: ${props => get(props, 'theme.body.background') || '#fff'};
   }
 
   body {
-    background-color: ${props => get(props, "theme.body.background") || "#fff"};
-    color: ${props => get(props, "theme.body.color") || "#000"};
-    font-family: ${props => get(props, "theme.fonts.primary") || defaultFonts};
-    font-size: ${props => get(props, "theme.body.fontSize") || "16px"};
+    background-color: ${props => get(props, 'theme.body.background') || '#fff'};
+    color: ${props => get(props, 'theme.body.color') || '#000'};
+    font-family: ${props => get(props, 'theme.fonts.primary') || defaultFonts};
+    font-size: ${props => get(props, 'theme.body.fontSize') || '16px'};
     font-weight: normal;
-    margin: ${props => get(props, "theme.body.margin") || "0"};
+    margin: ${props => get(props, 'theme.body.margin') || '0'};
     height: 100%;
-    line-height: ${props => get(props, "theme.body.lineHeight") || "22px"};
-    padding: ${props => get(props, "theme.body.padding") || "0"};
+    line-height: ${props => get(props, 'theme.body.lineHeight') || '22px'};
+    padding: ${props => get(props, 'theme.body.padding') || '0'};
     position: relative;
     overflow-x: hidden;
   }
@@ -53,7 +53,7 @@ export const GlobalStyle = createGlobalStyle`
   figure,
   ol,
   ul {
-    font-size: ${props => get(props, "theme.body.fontSize") || "16px"};
+    font-size: ${props => get(props, 'theme.body.fontSize') || '16px'};
     margin: 0;
     padding: 0;
   }
@@ -85,4 +85,4 @@ export const GlobalStyle = createGlobalStyle`
   textarea {
     vertical-align: top;
   }
-`;
+`

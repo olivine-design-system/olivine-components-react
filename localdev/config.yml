@@ -29,7 +29,7 @@ uplinks:
     cache: false
 
 packages:
-  '@natterstefan/*':
+  '@olivine-design-system/*':
     access: $all
     publish: $authenticated
     proxy: npmjs

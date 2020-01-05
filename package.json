@@ -6,9 +6,9 @@
   "license": "Apache-2.0",
   "private": true,
   "engines": {
-    "node": "^13.5.0",
-    "npm": "^6.13.4",
-    "yarn": "^1.21.1"
+    "node": "^10.14",
+    "npm": "^6.4",
+    "yarn": "^1.9"
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
@@ -50,12 +50,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/olivine-design-system/olivine-components-react.git"
+    "url": "git+https://github.com/olivine-design-system/react-component-library-lerna.git"
   },
   "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
+    "packages": ["packages/*"]
   },
   "keywords": [
     "lerna",
@@ -65,9 +63,9 @@
     "styled-components"
   ],
   "bugs": {
-    "url": "https://github.com/olivine-design-system/olivine-components-react/issues"
+    "url": "https://github.com/olivine-design-system/react-component-library-lerna/issues"
   },
-  "homepage": "https://github.com/olivine-design-system/olivine-components-react#readme",
+  "homepage": "https://github.com/olivine-design-system/react-component-library-lerna#readme",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",

@@ -1,5 +1,5 @@
 {
-  "name": "@natterstefan/ns-base-js",
+  "name": "@olivine-design-system/ns-base-js",
   "version": "0.1.0",
   "description": "Example base components",
   "main": "lib/index.js",

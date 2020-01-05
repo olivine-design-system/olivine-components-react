@@ -14,22 +14,22 @@
  * Prompt Handler
  * - https://www.npmjs.com/package/inquirer
  */
-const program = require("commander");
+const program = require('commander')
 
-const pkg = require("../package.json");
+const pkg = require('../package.json')
 
-const create = require("./create");
+const create = require('./create')
 
 program
   .version(pkg.version)
-  .command("create")
-  .description("create new package from template")
+  .command('create')
+  .description('create new package from template')
   .action(create)
-  .parse(process.argv);
+  .parse(process.argv)
 
 if (!process.argv.slice(2).length) {
-  program.outputHelp();
+  program.outputHelp()
 }
 
 // do this at the end of the file
-program.parse(process.argv);
+program.parse(process.argv)

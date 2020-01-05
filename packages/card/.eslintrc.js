@@ -1,3 +1,3 @@
-const rules = require("../../.eslintrc.js");
+const rules = require('../../.eslintrc.js')
 
-module.exports = rules;
+module.exports = rules

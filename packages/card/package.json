@@ -1,5 +1,5 @@
 {
-  "name": "@natterstefan/ns-card-js",
+  "name": "@olivine-design-system/ns-card-js",
   "version": "0.1.0",
   "description": "Example card component",
   "main": "lib/index.js",
@@ -34,7 +34,7 @@
   "author": "Stefan Natter",
   "license": "MIT",
   "dependencies": {
-    "@natterstefan/ns-base-js": "^0.1.0",
+    "@olivine-design-system/ns-base-js": "^0.1.0",
     "lodash": "^4.17.11",
     "react": "^16.8.1",
     "styled-components": "^4.1.3"

@@ -1,1 +1,1 @@
-# olivine-components-react
+# React Component Library with Lerna
