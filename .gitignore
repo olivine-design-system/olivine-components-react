@@ -2,7 +2,7 @@
 node_modules
 *.log
 tmp
-
+.npmrc
 # build
 build
 dist
