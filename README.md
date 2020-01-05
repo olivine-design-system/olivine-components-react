@@ -1,4 +1,4 @@
-# React Component Library with Lerna
+# 🟢 Olivine React Components
 
 > Add this snippet to the `package.json` to run verdaccio
 
