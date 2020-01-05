@@ -1,3 +1,3 @@
 # Button
 
-Simple button component.
+Simple button component
