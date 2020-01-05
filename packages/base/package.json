@@ -26,10 +26,7 @@
     "pretest": "yarn build",
     "test": "jest"
   },
-  "publishConfig": {
-    "access": "public",
-    "registry": "http://localhost:4873/"
-  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "author": "Ruben Costa",
   "license": "MIT",
   "dependencies": {
