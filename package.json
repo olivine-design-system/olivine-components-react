@@ -31,10 +31,7 @@
     "start": "yarn clean-dist && start-storybook -p 9001 -c .storybook --ci",
     "test": "jest --detectOpenHandles"
   },
-  "publishConfig": {
-    "access": "public",
-    "registry": "http://localhost:4873/"
-  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
