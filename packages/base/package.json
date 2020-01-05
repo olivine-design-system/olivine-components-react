@@ -1,6 +1,6 @@
 {
   "name": "@olivine-components-react/ns-base-js",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Example base components",
   "main": "lib/index.js",
   "module": "src/index.js",
