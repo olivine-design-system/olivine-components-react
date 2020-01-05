@@ -1,6 +1,6 @@
 {
   "name": "@olivine-components-react/ns-card-js",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Example card component",
   "main": "lib/index.js",
   "module": "src/index.js",
@@ -32,7 +32,7 @@
   "author": "Ruben Costa",
   "license": "MIT",
   "dependencies": {
-    "@olivine-components-react/ns-base-js": "^0.1.4",
+    "@olivine-components-react/ns-base-js": "^0.1.5",
     "lodash": "^4.17.11",
     "react": "^16.8.1",
     "styled-components": "^4.1.3"
