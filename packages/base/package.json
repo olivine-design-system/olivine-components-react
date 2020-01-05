@@ -1,6 +1,6 @@
 {
   "name": "@olivine-components-react/ns-base-js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Example base components",
   "main": "lib/index.js",
   "module": "src/index.js",
@@ -26,7 +26,9 @@
     "pretest": "yarn build",
     "test": "jest"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "author": "Ruben Costa",
   "license": "MIT",
   "dependencies": {

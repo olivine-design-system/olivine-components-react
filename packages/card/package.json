@@ -1,6 +1,6 @@
 {
   "name": "@olivine-components-react/ns-card-js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Example card component",
   "main": "lib/index.js",
   "module": "src/index.js",
@@ -26,11 +26,13 @@
     "pretest": "yarn build",
     "test": "jest"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "author": "Ruben Costa",
   "license": "MIT",
   "dependencies": {
-    "@olivine-components-react/ns-base-js": "^0.1.1",
+    "@olivine-components-react/ns-base-js": "^0.1.2",
     "lodash": "^4.17.11",
     "react": "^16.8.1",
     "styled-components": "^4.1.3"
