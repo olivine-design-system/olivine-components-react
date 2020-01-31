@@ -1,5 +1,5 @@
 {
-  "name": "olivine-components-react",
+  "name": "@olivine/olivine-components-react",
   "version": "0.0.1",
   "description": "Example setup of a react-component library managed with lerna",
   "author": "Ruben Costa <costamartinezruben@gmail.com>",
@@ -31,7 +31,9 @@
     "start": "yarn clean-dist && start-storybook -p 9001 -c .storybook --ci",
     "test": "jest --detectOpenHandles"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/olivine-design-system" },
+  "publishConfig": {
+    "access": "public"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -47,10 +49,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/olivine-components-react/olivine-components-react.git"
+    "url": "git+https://github.com/olivine-design-system/olivine-components-react.git"
   },
   "workspaces": {
-    "packages": ["packages/*"]
+    "packages": [
+      "packages/*"
+    ]
   },
   "keywords": [
     "lerna",
@@ -60,9 +64,9 @@
     "styled-components"
   ],
   "bugs": {
-    "url": "https://github.com/olivine-components-react/olivine-components-react/issues"
+    "url": "https://github.com/olivine-design-system/olivine-components-react/issues"
   },
-  "homepage": "https://github.com/olivine-components-react/olivine-components-react#readme",
+  "homepage": "https://github.com/olivine-design-system/olivine-components-react#readme",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
@@ -114,6 +118,7 @@
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.5.2",
     "webpack": "^4.29.6",
+    "webpack-bundle-analyzer": "^3.6.0",
     "webpack-cli": "^3.2.3"
   },
   "dependencies": {

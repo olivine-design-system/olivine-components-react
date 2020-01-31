@@ -1,4 +1,6 @@
 const babelConfig = require('./babel.config')
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+  .BundleAnalyzerPlugin
 
 module.exports = {
   resolve: {
@@ -7,6 +9,7 @@ module.exports = {
   },
   devtool: 'source-map',
   mode: 'development',
+  plugins: [new BundleAnalyzerPlugin()],
   module: {
     rules: [
       {

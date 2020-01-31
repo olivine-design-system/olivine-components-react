@@ -8,3 +8,5 @@
     "registry": "http://localhost:4873/"
   },
 ```
+
+yarn run publish

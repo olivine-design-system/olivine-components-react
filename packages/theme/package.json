@@ -1,5 +1,5 @@
 {
-  "name": "@olivine-components-react/ns-theme-js",
+  "name": "@olivine/theme",
   "version": "0.1.4",
   "description": "Example theme component",
   "main": "lib/index.js",
