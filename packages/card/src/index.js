@@ -6,7 +6,7 @@ import { Button } from '@olivine/base'
 export const StyledCard = styled.div`
   border: 5px solid ${props => get(props, 'theme.Card.borderColor') || '#000'};
   border-radius: 10px;
-  padding: 20px;
+  padding: 25px;
   text-align: center;
 
   h1 {
