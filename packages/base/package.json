@@ -13,6 +13,9 @@
   "directories": {
     "lib": "src"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "prebuild": "rimraf dist && rimraf es && rimraf esm && rimraf lib",
     "build": "yarn build-csj && yarn build-es && yarn build-esm && yarn build-umd",
@@ -33,5 +36,5 @@
     "react": "^16.8.1",
     "styled-components": "^4.1.3"
   },
-  "gitHead": "1599c6786be80b127d9eb6fc0c3c7f584878f7aa"
+  "gitHead": "671d8911b124fa4c5522417ae39b24fba9061c30"
 }
