@@ -9,4 +9,6 @@
   },
 ```
 
+# How to publish
+
 yarn run publish
