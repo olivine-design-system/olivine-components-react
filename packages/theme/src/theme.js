@@ -1,8 +1,11 @@
-import { merge } from 'lodash'
+import merge from 'lodash/merge'
+
+import themeAnimations from './animations'
+import themeColors from './colors'
 
 // theme color palette
 // inspired by https://coolors.co/app/9fb1bc-465775-ffffff-274c77-2e4057
-export const themeColors = {
+export const themeColorsOutdated = {
   bodyColor: '#465775',
   bodyBackground: '#FFFFFF',
   primary: '#274C77',
@@ -16,9 +19,10 @@ export const themeFonts = {
 }
 
 export const createTheme = opts => {
-  const { fonts, theme, colors } = opts || {}
+  const { fonts, theme, colors, animations } = opts || {}
   const customFonts = merge({}, themeFonts, fonts)
-  const customColors = merge({}, themeColors, colors)
+  const customColors = merge({}, themeColorsOutdated, themeColors, colors)
+  const customAnimations = merge({}, themeAnimations, animations)
 
   return merge(
     {},
@@ -26,6 +30,7 @@ export const createTheme = opts => {
       name: 'base', // can be used in https://github.com/echoulen/storybook-addon-styled-component-theme
       colors: customColors,
       fonts: customFonts,
+      animations: customAnimations,
       body: {
         color: customColors.bodyColor,
         background: customColors.bodyBackground,

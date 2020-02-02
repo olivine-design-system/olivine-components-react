@@ -4,7 +4,7 @@
  * - https://www.npmjs.com/package/styled-normalize
  *  - https://github.com/necolas/normalize.css
  */
-import { get } from 'lodash'
+import get from 'lodash/get'
 import { createGlobalStyle } from 'styled-components'
 
 const defaultFonts = 'Helvetica, Arial, sans-serif'
