@@ -5,6 +5,7 @@
   "author": "Ruben Costa <costamartinezruben@gmail.com>",
   "license": "Apache-2.0",
   "private": true,
+  "sideEffects": false,
   "engines": {
     "node": "^10.14",
     "npm": "^6.4",
