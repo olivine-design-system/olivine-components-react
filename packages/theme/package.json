@@ -2,7 +2,7 @@
   "name": "@olivine/theme",
   "version": "0.1.10",
   "description": "Example theme component",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "module": "src/index.js",
   "files": [
     "dist",

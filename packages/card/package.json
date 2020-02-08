@@ -2,7 +2,7 @@
   "name": "@olivine/card",
   "version": "0.1.13",
   "description": "Example card component",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "module": "src/index.js",
   "files": [
     "dist",
