@@ -1,6 +1,6 @@
 {
   "name": "@olivine/theme",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Example theme component",
   "main": "lib/index.js",
   "module": "src/index.js",

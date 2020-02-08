@@ -1,6 +1,6 @@
 {
   "name": "@olivine/card",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "Example card component",
   "main": "lib/index.js",
   "module": "src/index.js",
@@ -32,7 +32,7 @@
   "author": "Ruben Costa",
   "license": "MIT",
   "dependencies": {
-    "@olivine/base": "^0.2.3",
+    "@olivine/base": "^0.2.4",
     "lodash": "^4.17.11",
     "react": "^16.8.1",
     "styled-components": "^4.1.3"
