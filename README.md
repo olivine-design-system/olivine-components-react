@@ -11,4 +11,4 @@
 
 # How to publish
 
-yarn run publish
+`yarn run publish`

@@ -1,3 +1,6 @@
-# Button
+# Base components
 
-Simple button component
+> This is a set of base components also considered as atoms.
+
+### Current base components
+- Button
