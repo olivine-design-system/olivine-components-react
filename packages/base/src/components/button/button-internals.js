@@ -1,41 +1,39 @@
 import React from 'react'
 
-// TODO: Add Prefix and Sufix
-// import {
-//   StartEnhancer as StyledStartEnhancer,
-//   EndEnhancer as StyledEndEnhancer,
-// } from './styled-components.js'
+import { ButtonPrefix, ButtonSufix } from './styled-components.js'
+import { getSharedProps } from './utils.js'
 
 function ButtonInternals(props) {
-  const { children, overrides = {}, startEnhancer, endEnhancer } = props
-  // const [StartEnhancer, startEnhancerProps] = getOverrides(
-  //   overrides.StartEnhancer,
+  const { children, overrides = {}, prefix, sufix } = props
+  console.log(prefix)
+  // const [ButtonPrefix, buttonPrefixProps] = getOverrides(
+  //   overrides.ButtonPrefix,
   //   StyledStartEnhancer,
   // )
-  // const [EndEnhancer, endEnhancerProps] = getOverrides(
-  //   overrides.EndEnhancer,
+  // const [ButtonSufix, buttonSufixProps] = getOverrides(
+  //   overrides.ButtonSufix,
   //   StyledEndEnhancer,
   // )
-  // const sharedProps = getSharedProps(props)
+
+  const sharedProps = getSharedProps(props)
   return (
     <React.Fragment>
-      {startEnhancer && (
-        <div>start</div>
-        // <StartEnhancer {...sharedProps} {...startEnhancerProps}>
-        // <StartEnhancer>
-        //   {typeof startEnhancer === 'function'
-        //     ? startEnhancer(sharedProps)
-        //     : startEnhancer}
-        // </StartEnhancer>
+      {prefix && (
+        <ButtonPrefix
+          {...sharedProps}
+          // {...buttonPrefixProps}
+        >
+          {typeof prefix === 'function' ? prefix(sharedProps) : prefix}
+        </ButtonPrefix>
       )}
       {children}
-      {endEnhancer && (
-        <div>end</div>
-        // <EndEnhancer {...sharedProps} {...endEnhancerProps}>
-        //   {typeof endEnhancer === 'function'
-        //     ? endEnhancer(sharedProps)
-        //     : endEnhancer}
-        // </EndEnhancer>
+      {sufix && (
+        <ButtonSufix
+          {...sharedProps}
+          // {...buttonSufixProps}
+        >
+          {typeof sufix === 'function' ? sufix(sharedProps) : sufix}
+        </ButtonSufix>
       )}
     </React.Fragment>
   )

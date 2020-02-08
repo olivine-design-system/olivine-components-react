@@ -38,6 +38,18 @@ export const StyledButton = styled.div(
   }),
 )
 
+export const ButtonSufix = styled.div(({ theme }) => ({
+  display: 'flex',
+  [theme.direction === 'rtl' ? 'marginRight' : 'marginLeft']: theme.sizing
+    .scale500,
+}))
+
+export const ButtonPrefix = styled.div(({ theme }) => ({
+  display: 'flex',
+  [theme.direction === 'rtl' ? 'marginLeft' : 'marginRight']: theme.sizing
+    .scale500,
+}))
+
 function getLoadingSpinnerColors({ theme, $type, $disabled }) {
   if ($disabled) {
     return {

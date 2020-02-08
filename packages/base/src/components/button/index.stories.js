@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import { withKnobs, text } from '@storybook/addon-knobs'
+import { withKnobs, text, select } from '@storybook/addon-knobs'
 import { withReadme } from 'storybook-readme'
 import { ThemeProvider } from 'styled-components'
 
@@ -40,19 +40,31 @@ storiesOf('Button', module)
   .addDecorator(withKnobs)
   .addDecorator(withReadme(ButtonReadme))
   .addWithJSX('default', () => {
+    const typeOptions = ['primary', 'secondary', 'tertiary', 'minimal']
+    const type = select('Type', typeOptions, 'primary')
+
+    const shapeOptions = ['default', 'pill', 'round', 'square']
+    const shape = select('Shape', shapeOptions, 'default')
+
+    const sizeOptions = ['mini', 'default', 'compact', 'large']
+    const size = select('Size', sizeOptions, 'default')
+
+    const prefix = text('Prefix', '')
+    const sufix = text('Sufix', '')
+
     const buttonText = text('text', 'Click me')
-    const typeText = text('type', 'primary')
-    const shapeText = text('shape', 'default')
-    const sizeText = text('size', 'default')
+
     return (
       <ThemeProvider theme={theme}>
         <div style={{ margin: '0 auto', width: '300px' }}>
           <GlobalStyle />
           <Button
-            type={typeText}
-            shape={shapeText}
-            size={sizeText}
+            type={type}
+            shape={shape}
+            size={size}
             onClick={onClickHandler}
+            prefix={prefix}
+            sufix={sufix}
           >
             {buttonText}
           </Button>

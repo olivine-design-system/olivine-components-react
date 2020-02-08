@@ -22,15 +22,14 @@ class Button extends React.Component {
       shape,
       isLoading,
       isSelected,
-      startEnhancer,
-      endEnhancer,
+      prefix,
+      sufix,
       children,
       forwardedRef,
       ...restProps
     } = this.props
 
     const sharedProps = getSharedProps(this.props)
-    console.warn(sharedProps)
     return (
       <StyledButton
         ref={forwardedRef}
