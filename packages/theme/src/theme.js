@@ -2,6 +2,7 @@ import merge from 'lodash/merge'
 
 import themeAnimations from './animations'
 import themeColors from './colors'
+import lightComponentColors from './themes/light-theme/components-colors'
 import themeTypography from './typography'
 import themeBorders from './borders'
 import themeSizing from './sizing'
@@ -24,7 +25,13 @@ export const themeFonts = {
 export const createTheme = opts => {
   const { fonts, theme, colors, animations } = opts || {}
   const customFonts = merge({}, themeFonts, fonts)
-  const customColors = merge({}, themeColorsOutdated, themeColors, colors)
+  const customColors = merge(
+    {},
+    themeColorsOutdated,
+    themeColors,
+    colors,
+    lightComponentColors,
+  )
   const customAnimations = merge({}, themeAnimations, animations)
 
   return merge(

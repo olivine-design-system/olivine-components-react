@@ -17,6 +17,7 @@ const StoryComponent = () => {
   const [count, setCount] = useState(0)
 
   const buttonText = text('text', 'Click me')
+
   // the only reason onClick was written like this, and not just
   // `onClick = action('clicked')` is due to a cleaner export in the JSX tab
   const onClick = e => {
@@ -40,11 +41,21 @@ storiesOf('Button', module)
   .addDecorator(withReadme(ButtonReadme))
   .addWithJSX('default', () => {
     const buttonText = text('text', 'Click me')
+    const typeText = text('type', 'primary')
+    const shapeText = text('shape', 'default')
+    const sizeText = text('size', 'default')
     return (
       <ThemeProvider theme={theme}>
         <div style={{ margin: '0 auto', width: '300px' }}>
           <GlobalStyle />
-          <Button onClick={onClickHandler}>{buttonText}</Button>
+          <Button
+            type={typeText}
+            shape={shapeText}
+            size={sizeText}
+            onClick={onClickHandler}
+          >
+            {buttonText}
+          </Button>
         </div>
       </ThemeProvider>
     )
