@@ -9,7 +9,7 @@ import { createGlobalStyle } from 'styled-components'
 
 const defaultFonts = 'Helvetica, Arial, sans-serif'
 
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   * {
     font-family: ${props => get(props, 'theme.fonts.primary') || defaultFonts};
     box-sizing: border-box;
@@ -86,3 +86,5 @@ export const GlobalStyle = createGlobalStyle`
     vertical-align: top;
   }
 `
+
+export default GlobalStyle

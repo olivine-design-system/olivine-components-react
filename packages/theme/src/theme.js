@@ -58,4 +58,6 @@ export const createTheme = opts => {
   )
 }
 
-export const theme = createTheme()
+const theme = createTheme()
+
+export default theme
