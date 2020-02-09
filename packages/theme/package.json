@@ -1,6 +1,6 @@
 {
   "name": "@olivine/theme",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "Example theme component",
   "main": "lib/index.js",
   "module": "src/index.js",
@@ -32,10 +32,10 @@
   "author": "Ruben Costa",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^4.17.11",
-    "react": "^16.8.1",
     "@emotion/styled": "^10.0.27",
-    "emotion-theming": "^10.0.27"
+    "emotion-theming": "^10.0.27",
+    "lodash": "^4.17.11",
+    "react": "^16.8.1"
   },
   "sideEffects": false,
   "gitHead": "671d8911b124fa4c5522417ae39b24fba9061c30"

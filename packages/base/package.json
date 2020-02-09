@@ -1,6 +1,6 @@
 {
   "name": "@olivine/base",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Example base components",
   "main": "lib/index.js",
   "module": "src/index.js",
@@ -32,9 +32,9 @@
   "author": "Ruben Costa",
   "license": "MIT",
   "dependencies": {
-    "react": "^16.8.1",
     "@emotion/styled": "^10.0.27",
-    "emotion-theming": "^10.0.27"
+    "emotion-theming": "^10.0.27",
+    "react": "^16.8.1"
   },
   "sideEffects": false,
   "gitHead": "671d8911b124fa4c5522417ae39b24fba9061c30"
