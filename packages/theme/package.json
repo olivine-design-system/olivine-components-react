@@ -34,7 +34,8 @@
   "dependencies": {
     "lodash": "^4.17.11",
     "react": "^16.8.1",
-    "styled-components": "^4.1.3"
+    "@emotion/styled": "^10.0.27",
+    "emotion-theming": "^10.0.27"
   },
   "sideEffects": false,
   "gitHead": "671d8911b124fa4c5522417ae39b24fba9061c30"

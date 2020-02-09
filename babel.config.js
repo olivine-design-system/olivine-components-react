@@ -27,13 +27,15 @@ module.exports = {
      */
     '@babel/plugin-transform-modules-commonjs',
     '@babel/plugin-proposal-class-properties',
-    [
-      'babel-plugin-styled-components',
-      {
-        ssr: true,
-        displayName: true,
-        fileName: false,
-      },
-    ],
+    'babel-plugin-emotion',
+
+    // [
+    //   'babel-plugin-styled-components',
+    //   {
+    //     ssr: true,
+    //     displayName: true,
+    //     fileName: false,
+    //   },
+    // ],
   ],
 }

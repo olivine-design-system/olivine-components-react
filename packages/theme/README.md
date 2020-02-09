@@ -4,8 +4,9 @@
 
 ```js
 import React from 'react';
-import { ThemeProvider } from 'styled-components
-import { GlobalStyles } from '@olivine/theme'
+import { ThemeProvider } from "emotion-theming";
+
+import { GlobalStyles, theme } from '@olivine/theme'
 
 import { theme } from './theme'
 

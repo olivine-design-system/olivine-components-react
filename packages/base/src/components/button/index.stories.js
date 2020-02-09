@@ -3,9 +3,9 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { withKnobs, text, select } from '@storybook/addon-knobs'
 import { withReadme } from 'storybook-readme'
-import { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from 'emotion-theming'
 
-import { GlobalStyle, theme } from '../../../../theme/src'
+import { theme } from '../../../../theme/src'
 import ButtonReadme from '../../../README.md'
 
 import Button from '.'
@@ -28,7 +28,7 @@ const StoryComponent = () => {
   return (
     <ThemeProvider theme={theme}>
       <div style={{ margin: '0 auto', width: '300px' }}>
-        <GlobalStyle />
+        {/* <GlobalStyle /> */}
         <p>You clicked {count} times</p>
         <Button onClick={onClick}>{buttonText}</Button>
       </div>
@@ -57,7 +57,7 @@ storiesOf('Button', module)
     return (
       <ThemeProvider theme={theme}>
         <div style={{ margin: '0 auto', width: '300px' }}>
-          <GlobalStyle />
+          {/* <GlobalStyle /> */}
           <Button
             type={type}
             shape={shape}

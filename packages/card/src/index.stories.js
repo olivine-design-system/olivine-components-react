@@ -3,9 +3,9 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { withKnobs, color, text } from '@storybook/addon-knobs'
 import { withReadme } from 'storybook-readme'
-import { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from 'emotion-theming'
 
-import { GlobalStyle, createTheme } from '../../theme/src'
+import { createTheme } from '../../theme/src'
 import CardReadme from '../README.md'
 
 import Card from '.'
@@ -36,7 +36,7 @@ storiesOf('Card', module)
     return (
       <ThemeProvider theme={theme}>
         <div style={{ margin: '0 auto', width: '300px' }}>
-          <GlobalStyle />
+          {/* <GlobalStyle /> */}
           <Card buttonText={buttonText} onClick={onClick} title={cardTitle}>
             {cardText}
           </Card>
