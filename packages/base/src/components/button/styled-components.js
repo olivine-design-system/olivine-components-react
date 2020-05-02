@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
-import { TYPE, SIZE, SHAPE } from './constants.js'
+
+import { TYPE, SIZE, SHAPE } from './constants'
 
 export const StyledButton = styled.div(
   ({ theme, $size, $type, $shape, $isLoading, $isSelected, $disabled }) => ({

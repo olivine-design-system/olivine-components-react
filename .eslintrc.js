@@ -4,6 +4,7 @@ module.exports = {
   extends: 'eslint-config-ns',
   rules: {
     'class-methods-use-this': 0,
+    'no-use-before-define': 0,
     'jest/consistent-test-it': [
       'error',
       {
