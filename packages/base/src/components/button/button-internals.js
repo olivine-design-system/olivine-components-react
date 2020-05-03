@@ -5,7 +5,7 @@ import { getSharedProps } from './utils.js'
 
 function ButtonInternals(props) {
   const { children, overrides = {}, prefix, sufix } = props
-  console.log(prefix)
+  // console.log(prefix)
   // const [ButtonPrefix, buttonPrefixProps] = getOverrides(
   //   overrides.ButtonPrefix,
   //   StyledStartEnhancer,

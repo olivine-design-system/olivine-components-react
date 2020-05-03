@@ -31,11 +31,14 @@
   },
   "author": "Ruben Costa",
   "license": "MIT",
+  "sideEffects": false,
   "dependencies": {
     "@emotion/styled": "^10.0.27",
     "emotion-theming": "^10.0.27",
     "react": "^16.8.1"
   },
-  "sideEffects": false,
+  "devDependencies": {
+    "jest-emotion": "^10.0.32"
+  },
   "gitHead": "671d8911b124fa4c5522417ae39b24fba9061c30"
 }
