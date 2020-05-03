@@ -5,6 +5,7 @@ module.exports = {
   rules: {
     'class-methods-use-this': 0,
     'no-use-before-define': 0,
+    'import/no-extraneous-dependencies': 0,
     'jest/consistent-test-it': [
       'error',
       {
