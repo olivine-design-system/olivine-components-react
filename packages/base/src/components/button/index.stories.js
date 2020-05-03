@@ -3,12 +3,13 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { withKnobs, text, select } from '@storybook/addon-knobs'
 import { withReadme } from 'storybook-readme'
-import { ThemeProvider } from 'emotion-theming'
+import { testingUtilities } from '@olivine/internals'
 
-import { theme } from '../../../../theme/src'
 import ButtonReadme from '../../../README.md'
 
 import Button from '.'
+
+const { ThemeProviderMock } = testingUtilities
 
 const onClickHandler = e => action('clicked')(e)
 
@@ -26,13 +27,13 @@ const StoryComponent = () => {
   }
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProviderMock>
       <div style={{ margin: '0 auto', width: '300px' }}>
         {/* <GlobalStyle /> */}
         <p>You clicked {count} times</p>
         <Button onClick={onClick}>{buttonText}</Button>
       </div>
-    </ThemeProvider>
+    </ThemeProviderMock>
   )
 }
 
@@ -55,7 +56,7 @@ storiesOf('Button', module)
     const buttonText = text('text', 'Click me')
 
     return (
-      <ThemeProvider theme={theme}>
+      <ThemeProviderMock>
         <div style={{ margin: '0 auto', width: '300px' }}>
           {/* <GlobalStyle /> */}
           <Button
@@ -69,7 +70,7 @@ storiesOf('Button', module)
             {buttonText}
           </Button>
         </div>
-      </ThemeProvider>
+      </ThemeProviderMock>
     )
   })
   .addWithJSX('with click counter (hooks)', () => <StoryComponent />)
