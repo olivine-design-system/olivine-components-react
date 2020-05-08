@@ -1,8 +1,8 @@
 import React, { Children } from 'react'
-import { StyledButton } from './styled-components.js'
+import { StyledButton } from './styled-components'
 import ButtonInternals from './button-internals'
-import { defaultProps } from './default-props.js'
-import { getSharedProps } from './utils.js'
+import { defaultProps } from './default-props'
+import { getSharedProps } from './utils'
 
 class Button extends React.Component {
   static defaultProps = defaultProps

@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 
 import { TYPE, SIZE, SHAPE } from './constants'
 
-export const StyledButton = styled.div(
+export const StyledButton = styled.button(
   ({ theme, $size, $type, $shape, $isLoading, $isSelected, $disabled }) => ({
     display: 'inline-flex',
     alignItems: 'center',
@@ -113,13 +113,13 @@ function getBorderRadiiStyles({ theme, $size, $shape }) {
 function getFontStyles({ theme, $size }) {
   switch ($size) {
     case SIZE.mini:
-      return theme.typography.font150
+      return theme.typography().font150
     case SIZE.compact:
-      return theme.typography.font250
+      return theme.typography().font250
     case SIZE.large:
-      return theme.typography.font450
+      return theme.typography().font450
     default:
-      return theme.typography.font350
+      return theme.typography().font350
   }
 }
 
