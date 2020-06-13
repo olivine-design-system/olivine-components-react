@@ -1,4 +1,5 @@
-import React, { Children } from 'react'
+import React from 'react'
+
 import { StyledButton } from './styled-components'
 import ButtonInternals from './button-internals'
 import { defaultProps } from './default-props'
@@ -12,7 +13,7 @@ class Button extends React.Component {
     if (isLoading) {
       return
     }
-    onClick && onClick(...args)
+    if (onClick) onClick(...args)
   }
 
   render() {
@@ -59,6 +60,7 @@ class Button extends React.Component {
   }
 }
 
+// eslint-disable-next-line react/no-multi-comp
 const ForwardedButton = React.forwardRef((props, ref) => (
   <Button forwardedRef={ref} {...props} />
 ))

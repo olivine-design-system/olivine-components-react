@@ -51,6 +51,7 @@ export const ButtonPrefix = styled.div(({ theme }) => ({
     .scale500,
 }))
 
+// eslint-disable-next-line no-unused-vars
 function getLoadingSpinnerColors({ theme, $type, $disabled }) {
   if ($disabled) {
     return {
