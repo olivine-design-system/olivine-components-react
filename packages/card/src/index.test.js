@@ -1,6 +1,9 @@
 import React from 'react'
 import { mount, shallow } from 'enzyme'
+import { testingUtilities } from '@olivine/internals'
 import { Button } from '@olivine/base'
+
+const { mountWithTheme } = testingUtilities
 
 import Card from '.'
 
@@ -11,13 +14,13 @@ describe('Card', () => {
   }
 
   it('renders', () => {
-    const wrapper = shallow(<Card {...props} />)
+    const wrapper = mountWithTheme(<Card {...props} />)
     expect(wrapper.find('h1').text()).toBe('Hello Card')
   })
 
   it('invokes onClick when clicked', () => {
     const onClick = jest.fn()
-    const wrapper = mount(<Card {...props} onClick={onClick} />)
+    const wrapper = mountWithTheme(<Card {...props} onClick={onClick} />)
     wrapper.find(Button).simulate('click')
     expect(onClick).toHaveBeenCalledTimes(1)
   })

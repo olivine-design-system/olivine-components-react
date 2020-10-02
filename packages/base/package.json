@@ -1,6 +1,6 @@
 {
   "name": "@olivine/base",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Example base components",
   "main": "lib/index.js",
   "module": "src/index.js",
@@ -27,7 +27,8 @@
     "lint-js": "eslint src",
     "lint-css": "stylelint 'src/**/*.js'",
     "pretest": "yarn build",
-    "test": "jest"
+    "test": "jest --forceExit",
+    "test:dev": "jest"
   },
   "author": "Ruben Costa",
   "license": "MIT",

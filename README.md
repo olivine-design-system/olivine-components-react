@@ -4,6 +4,13 @@
 
 <br/>
 
+# Setup your project
+> `yarn setup`
+
+<br/>
+
+<br/>
+
 # How to start
 
 > `yarn start`
@@ -15,6 +22,9 @@ The application will start on port `9001`.
 <br/>
 
 # How to publish
+
+Before publishing is required that you commited new changes and that the 
+tests are passing 100%
 
 > `yarn run publish`
 

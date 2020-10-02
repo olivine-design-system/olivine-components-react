@@ -1,6 +1,6 @@
 {
   "name": "@olivine/internals",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Internal functions used in olivine",
   "main": "lib/index.js",
   "module": "src/index.js",
